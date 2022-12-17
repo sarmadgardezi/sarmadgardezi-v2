@@ -1,0 +1,94 @@
+{
+  "talks": [
+ 
+  {
+      "title": "Destination Hotels",
+      "description": "destinationhotels.com.pk",
+      "wurl":"https://destinationhotels.com.pk",
+      "url": "https://www.youtube.com/watch?v=fiqdtIQzIVo",
+      "imgurl":"/projects/destination.png" ,
+      "tags": "website"
+    },
+    {
+      "title": "Destination Manora",
+      "description": "manorabeach.destinationhotels.com.pk",
+      "wurl":"https://manorabeach.destinationhotels.com.pk/",
+      "url": "https://www.youtube.com/watch?v=fiqdtIQzIVo",
+      "imgurl":"/projects/manora.png"  ,
+      "tags": "website"
+    },
+    {
+      "title": "Zain for Hearts",
+      "description": "zainforhearts.org",
+      "wurl":"https://zainforhearts.org/",
+      "url": "https://www.youtube.com/watch?v=fiqdtIQzIVo",
+      "imgurl":"/projects/z4h.png " ,
+      "tags": "website"
+    },
+    {
+      "title": "A & M Matrimonial",
+      "description": "aandmmatrimonial.com",
+      "wurl":"https://aandmmatrimonial.com/",
+      "url": "https://www.youtube.com/watch?v=fiqdtIQzIVo",
+      "imgurl":"/projects/am.png " ,
+      "tags": "website"
+    },
+    {
+      "title": "Torque Pk",
+      "description": "torque.pk",
+      "wurl":"https://torque.pk/",
+      "url": "https://www.youtube.com/watch?v=fiqdtIQzIVo",
+      "imgurl":"/projects/tourque.png " ,
+      "tags": "website"
+    },
+    {
+      "title": "Zeuz Media Travel",
+      "description": "zeuzmedia.com",
+      "wurl":"https://zeuzmedia.com/",
+      "url": "https://www.youtube.com/watch?v=fiqdtIQzIVo",
+      "imgurl":"/projects/zeuz.png " ,
+      "tags": "website"
+    },
+    {
+      "title": "Labode Guita",
+      "description": "labodeguita.co.uk",
+      "wurl":"https://www.labodeguita.co.uk",
+      "url": "https://www.youtube.com/watch?v=fiqdtIQzIVo",
+      "imgurl":"/projects/Labode.png " ,
+      "tags": "website"
+    },
+    {
+      "title": "Solushun Shop",
+      "description": "solushun.shop",
+      "wurl":"https://www.solushun.shop",
+      "url": "https://www.youtube.com/watch?v=fiqdtIQzIVo",
+      "imgurl":"/projects/solushunshop.png " ,
+      "tags": "website"
+    },
+    {
+      "title": "Gain Cafe",
+      "description": "gaincafe.com",
+      "wurl":"https://www.gaincafe.com",
+      "url": "https://www.youtube.com/watch?v=fiqdtIQzIVo",
+      "imgurl":"/projects/gaincafe.png " ,
+      "tags": "website"
+    },
+    {
+      "title": "Satveda",
+      "description": "thebarbershops.com",
+      "wurl":"https://www.thebarbershops.com",
+      "url": "https://www.youtube.com/watch?v=fiqdtIQzIVo",
+      "imgurl":"/projects/satveda.png " ,
+      "tags": "website"
+    },
+    {
+      "title": "TheBarber Shops",
+      "description": "thebarbershops.com",
+      "wurl":"https://www.thebarbershops.com",
+      "url": "https://www.youtube.com/watch?v=fiqdtIQzIVo",
+      "imgurl":"/projects/thebarbershops.png " ,
+      "tags": "website"
+    } 
+    
+  ]
+}

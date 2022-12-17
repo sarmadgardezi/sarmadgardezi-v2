@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /secret
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sarmadgardezi.com
+
+# Sitemaps
+Sitemap: https://sarmadgardezi.com/sitemap.xml
+Sitemap: https://sarmadgardezi.com/sitemap/sitemap-index.xml

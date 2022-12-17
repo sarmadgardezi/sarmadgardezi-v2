@@ -1,0 +1,139 @@
+import { Fragment } from 'react';
+import {
+  Container,
+  Box,
+  chakra,
+  Flex,
+  Stack,
+  VStack,
+  HStack,
+  Grid,
+  Icon,
+  Divider,
+  Link,
+  useColorModeValue
+} from '@chakra-ui/react';
+// Here we have used react-icons package for the icons
+import { IconType } from 'react-icons';
+import { FaRegComment, FaRegHeart, FaRegEye } from 'react-icons/fa';
+
+interface ArticleAttributes {
+  title: string;
+  link: string;
+  created_at: string;
+  meta: {
+    reactions: number;
+    comments: number;
+    views: number;
+  };
+}
+
+const articles: ArticleAttributes[] = [
+  {
+    title: 'Start Blog in Pakistan Step by Step Guide',
+    link: 'https://sarmadguides.com/start-blog-in-pakistan-guide-2020/',
+    created_at: 'March 03, 2020',
+    meta: {
+      reactions: 325,
+      comments: 11,
+      views: 10200
+    }
+  },
+  {
+    title: 'Facebook live Chat Widget for Websites',
+    link: 'https://sarmadguides.com/blog/codes/how-to-add-facebook-live-chat-in-your-website/788/',
+    created_at: 'November 03, 2021',
+    meta: {
+      reactions: 985,
+      comments: 8,
+      views: 17807
+    }
+  },
+  {
+    title: `Verify Instagram Account in Pakistan`,
+    link: 'https://sarmadguides.com/blog/instagram/verify-instagram-account-pakistan/6578/',
+    created_at: 'October 03, 2020',
+    meta: {
+      reactions: 5,
+      comments: 3,
+      views: 9756
+    }
+  }
+];
+
+const Articles = () => {
+  return (
+    <Container maxW="5xl" p={{ base: 5, md: 10 }}>
+      <Flex justify="left" mb={3}>
+        <chakra.h3 fontSize="2xl" fontWeight="bold" textAlign="center">
+          Latest Articles
+        </chakra.h3>
+      </Flex>
+      <VStack border="1px solid" borderColor="gray.400" rounded="md" overflow="hidden" spacing={0}>
+        {articles.map((article, index) => (
+          <Fragment key={index}>
+            <Grid
+              templateRows={{ base: 'auto auto', md: 'auto' }}
+              w="100%"
+              templateColumns={{ base: 'unset', md: '10fr 2fr' }}
+              p={{ base: 2, sm: 4 }}
+              gap={3}
+              alignItems="center"
+              _hover={{ bg: useColorModeValue('gray.200', 'gray.700') }}
+            >
+              <Box gridColumnEnd={{ base: 'span 2', md: 'unset' }}>
+                <chakra.h3 as={Link} href={article.link} isExternal fontWeight="bold" fontSize="lg">
+                  {article.title}
+                </chakra.h3>
+                <chakra.p
+                  fontWeight="medium"
+                  fontSize="sm"
+                  color={useColorModeValue('gray.600', 'gray.300')}
+                >
+                  Published: {article.created_at}
+                </chakra.p>
+              </Box>
+              <HStack
+                spacing={{ base: 0, sm: 3 }}
+                alignItems="center"
+                fontWeight="medium"
+                fontSize={{ base: 'xs', sm: 'sm' }}
+                color={useColorModeValue('gray.600', 'gray.300')}
+              >
+                <ArticleStat icon={FaRegComment} value={article.meta.comments} />
+                <ArticleStat icon={FaRegHeart} value={article.meta.reactions} />
+                <ArticleStat icon={FaRegEye} value={article.meta.views} />
+              </HStack>
+           
+            </Grid>
+            {articles.length - 1 !== index && <Divider m={0} />}
+          </Fragment>
+        ))}
+      </VStack>
+    </Container>
+  );
+};
+
+const ArticleStat = ({ icon, value }: { icon: IconType; value: number }) => {
+  return (
+    <Flex p={1} alignItems="center">
+      <Icon as={icon} w={5} h={5} mr={2} />
+      <chakra.span> {value} </chakra.span>
+    </Flex>
+  );
+};
+
+const ArticleSettingLink = ({ label }: { label: string }) => {
+  return (
+    <chakra.p
+      as={Link}
+      _hover={{ bg: useColorModeValue('gray.400', 'gray.600') }}
+      p={1}
+      rounded="md"
+    >
+      {label}
+    </chakra.p>
+  );
+};
+
+export default Articles;

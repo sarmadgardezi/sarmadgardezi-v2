@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@font-face {
+  font-family: 'Cal Sans';
+  src: url('/assets/fonts/CalSans-SemiBold.ttf');
+  src: url('/assets/fonts/CalSans-SemiBold.woff');
+  src: url('/assets/fonts/CalSans-SemiBold.woff2');
+  font-style: oblique;
+  font-weight: 600;
+  font-display: swap;
+}
+
+.Box {
+  width: 100%;
+}
+
+@media screen and (min-width: 30em) {
+  .Box {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .Box {
+    width: 25%;
+  }
+}
