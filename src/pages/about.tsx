@@ -26,7 +26,6 @@ const About: NextPage = () => {
               As a web developer and former product manager, I love engineering
               as much as shipping great products.
             </p>
-            <SocialProfiles />
           </div>
         </ContentWrapper>
 
