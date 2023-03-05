@@ -12,12 +12,12 @@ import { darkTheme, styled } from '../config/stitches.config';
 
 const StyledSection = styled('section', {
   '.hero-content': {
-    paddingTop: `calc(${HEADER_HEIGHT}px + 2rem)`,
+    paddingTop: `2rem`,
     paddingBottom: '4rem',
     backgroundColor: '$secondary50',
     borderBottom: '2px solid $border',
 
-    '@md': { py: `calc(${HEADER_HEIGHT}px + 4rem)` },
+    '@md': { py: `4rem` },
 
     [`.${darkTheme} &`]: { backgroundColor: '$secondary50' },
 
