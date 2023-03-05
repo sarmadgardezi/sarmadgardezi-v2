@@ -5,6 +5,7 @@ import { VStack, Heading, Text, Image, Box, extendTheme } from "@chakra-ui/react
 import metadata from '../layout/metadata.json';
 import Head from 'next/head';
 import AboutSection from '@/components/about-top'
+import { ContentWrapper } from '../Layout/ContentWrapper.tsx';
 
 const About: NextPage = () => {
   const {titleSuffix } = metadata
@@ -14,7 +15,21 @@ const About: NextPage = () => {
  <Head>
         <title key="title">About {metadata.titleSuffix}</title>
 			</Head>
- 
+      <ContentWrapper>
+          <div className="hero-introduction">
+            <h1>
+              Writes code.
+              <br />
+              Thinks product.
+            </h1>
+            <p>
+              As a web developer and former product manager, I love engineering
+              as much as shipping great products.
+            </p>
+            <SocialProfiles />
+          </div>
+        </ContentWrapper>
+
       <VStack as="section" alignItems="flex-start" w="full" spacing={3}>
         <AboutSection />
       <Heading as='h5' size='sm'>This website is designed and developed by Sarmad Gardezi</Heading>
