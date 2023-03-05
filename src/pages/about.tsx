@@ -5,7 +5,7 @@ import { VStack, Heading, Text, Image, Box, extendTheme } from "@chakra-ui/react
 import metadata from '../layout/metadata.json';
 import Head from 'next/head';
 import AboutSection from '@/components/about-top'
-import { ContentWrapper } from '../Layout/ContentWrapper.tsx';
+import { ContentWrapper } from '../layout/ContentWrapper.tsx';
 
 const About: NextPage = () => {
   const {titleSuffix } = metadata
