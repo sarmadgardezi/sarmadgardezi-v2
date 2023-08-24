@@ -113,8 +113,7 @@ const About: NextPage = () => {
               Thinks product.
             </h1>
             <p>
-              As a web developer and former product manager, I love engineering
-              as much as shipping great products.
+              As a web developer and Application Developer.
             </p>
           
           </div>
